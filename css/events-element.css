@@ -1,0 +1,187 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #403c3b;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    background-color: #403c3b;
+    margin: 0 auto 0 auto;
+}
+
+
+/* Responsive page rules at bottom of style sheet */
+
+
+/* FORM FOR FOCUS/BLUR PART 1 */
+
+h1 {
+    background-image: url(../img/kinglogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    text-indent: -1700%;
+    height: 75px;
+    line-height: 75px;
+    width: 117px;
+    margin: 0 auto 0 auto;
+    padding: 30px 10px 20px 10px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    margin: 0 0 23px 0;
+}
+
+form {
+    padding: 0 60px 65px 60px;
+    font-weight: 900;
+    font-size: 25px;
+    color: #fff;
+}
+
+label {
+    color: #fff;
+    display: block;
+    margin: 10px 0 10px 0;
+    font-size: 24px;
+}
+
+input[type='text'],
+input[type='password'],
+textarea {
+    background-color: #999;
+    color: #666;
+    font-family: 'Oswald', 'Futura', sans-serif;
+    font-size: 24px;
+    width: 95%;
+    padding: 4px 6px;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+textarea:focus {
+    border: 1px solid #fff;
+    background-color: #fff;
+    outline: none;
+}
+
+input[type='submit'] {
+    background-color: #cb6868;
+    color: #f3dad1;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 20px;
+    margin-right: 5px;
+    float: right;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input[type='submit']:hover {
+    background-color: #fff;
+    color: #cb6868;
+    cursor: pointer;
+    box-shadow: none;
+    position: relative;
+    top: 1px;
+    transition: ease-in 1s;
+    border: 2px solid #fff;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    font-size: 18px;
+    transition: ease-in-out 1s;
+}
+
+#feedback {
+    color: #bc0000;
+    font-size: 18px;
+    color: #fff;
+    background-image: url('../img/warning.png');
+    background-repeat: no-repeat;
+    background-position: 2px 14px;
+    padding: 10px 0 0 22px;
+}
+
+textarea {
+    width: 96%;
+    height: 5em;
+    line-height: 1.4em;
+}
+
+
+/* FORM FOR KEY PRESS PART 2 */
+
+
+/* Character Counter and profile head*/
+
+h2.kPress {
+    margin-top: 200px;
+}
+
+#charactersLeft {
+    color: #fff;
+    font-size: 24px;
+}
+
+#lastKey {
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+/* Small screen - acts like the app would */
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: #403c3b;
+    }
+    #page {
+        max-width: 480px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+
+/* Larger screens act like a demo for the app */
+
+@media only screen and (min-width: 960px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    h1 {
+        background-image: url(../img/2xkinglogo.png);
+        background-size: 72px 72px;
+    }
+}

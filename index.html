@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/events-element.css">
+    <title>EVENT INTERACTIONS(FOCUS/BLUR) & KEY PRESS</title>
+</head>
+
+<body>
+    <div id="page">
+        <h1>LISTKING</h1>
+        <h2>New Account</h2>
+        <form action="#" method="post" id="messageForm">
+            <label for="username">Create a username:</label>
+            <input type="text" name="username" id="uname" placeholder="Your Username" onblur="checkUsername()">
+            <div id="feedback"></div>
+            <label for="password">Create a password:</label>
+            <input type="password" name="password" id="pass" placeholder="Your Password">
+            <input type="submit" value="SIGN UP">
+            <h2 class="kPress">My Profile</h2>
+            <textarea id="message"></textarea>
+            <div id="charactersLeft">180 Characters</div>
+            <div id="lastKey"></div>
+            <input type="submit" id="message" value="next">
+        </form>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/keypress.js"></script>
+    <script src="js/event-element.js"></script>
+    <script src="js/html5-events.js"></script>
+</body>
+
+</html>
